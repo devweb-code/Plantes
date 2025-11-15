@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./Favicones/" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./Favicones/favicon.svg" />
+  <link rel="shortcut icon" href="./Favicones/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./Favicones/apple-touch-icon.png" />
+  <link rel="manifest"   href="./Favicones/site.webmanifest" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <!-- ----------------------------------------------contenu du header et navbar ------------------------------------------------------------->
+  <header id="Home" class="sm:flex sm:flex-col sm:w-full sm:h-auto xl:p-12 sm:p-20 md:p-28 ">
+    <nav class="sm:fixed sm:top-0 sm:left-0 sm:right-0 sm:h-11 sm:p-11 sm:w-[100vw] xl:bg-emerald-600 sm:bg-emerald-950 sm:z-10 xl:flex xl:flex-row xl:p-2 xl:text-nowrap xl:h-auto xl:w-[100%] xl:shadow-lg xl:rounded-b-lg xl:border-b-purple-50 xl:border-b-[1.5px] ">
+      <p class="xl:text-xl xl:font-Lobster xl:font-bold sm:font-Lobster sm:font-semibold sm:text-lg "> IndorePlants</p>
+      <ul id="open" class="sm:text-white text-lg xl:hidden sm:fixed sm:top-[40px] sm:right-[30px] md:absolute md:right-[60px] md:top-[100px] sm:cursor-pointer "><i class="fa-solid fa-bars"></i></ul>
+      <ul id="menu" class="xl:h-auto xl:w-[100%] xl:flex xl:flex-row xl:gap-5 xl:fixed xl:top-[-149px] xl:left-[1000px] sm:cursor-pointer sm:flex sm:flex-col sm:gap-8 sm:absolute sm:pt-40 sm:left-[-1000px] sm:h-[100vh] sm:w-[100vw] sm:text-2xl ">
+      
+        <li class="sm:transition duration-700 ease-out sm: hover:bg-amber-500 sm:hover:cursor-pointer sm:hover:rounded-lg"><a href="#Home"> Home</a></li>
+        <li class="sm:transition duration-700 ease-out sm: hover:bg-amber-500 sm:hover:cursor-pointer sm:hover:rounded-lg"><a href="#About">About</a></li>
+        <li class="sm:transition duration-700 ease-out sm: hover:bg-amber-500 sm:hover:cursor-pointer sm:hover:rounded-lg"><a href="#Popular">Popular</a></li>
+        <li class="sm:transition duration-700 ease-out sm: hover:bg-amber-500 sm:hover:cursor-pointer sm:hover:rounded-lg"><a href="#Review">Review</a></li>
+        <img class="xl:hidden sm:w-40 sm:relative sm:h-11 sm:rotate-45 sm:top-[-300px] sm:left-[-140px]"src="./Toffes/a-leafy-green-palm-tree-leaf-is-shown-in-full-color-stock-png.webp" alt="feuille">
+        <img class="xl:hidden sm:w-20 sm:relative sm:h-11 sm:bottom-1 sm:left-[140px]"src="./Toffes/green-tropical-leaf-monstera-png.webp" alt="feuille2">
+        <ul id="close" class="sm:text-white sm:absolute sm:top-[-40px] sm:right-[20px] text-lg xl:hidden"><i class="fa-solid fa-xmark"></i></ul>
+
+      </ul>
+    </nav>
+    <div class="xl:flex xl:flex-row xl:w-full xl:h-auto sm:flex sm:flex-col xl:mt-0 sm:mt-[0px]">
+      <section class="sm:flex sm:flex-col sm:mt-10 sm:w-[50vw] sm:h-auto sm:animate-transitions">
+        <p class="xl:font-Jost xl:font-bold xl:text-3xl lg:font-Jost lg:font-bold lg:text-2xl md:font-Jost md:font-bold md:text-lg  sm:font-Jost sm:font-bold sm:text-xs "> <span class="text-yellow-500">Plants</span> make a <br> positive <span  class="text-yellow-500">impact</span> on <br> your environnement</p>
+        <p class="xl:font-Lobster xl:text-xs xl:font-thin lg:font-Lobster lg:text-[10px] lg:font-thin md:font-Lobster md:text-[9px] md:font-thin sm:font-Lobster sm:text-[7px] sm:font-thin pt-4"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sit quia <br> similique minus aliquam tempora culpa incidunt, <br>nulla expedita commodi, 
+          excepturi libero dignissimos enim corporis <br>eius consequatur. Asperiores, nihil.</p>
+        <div class="flex flex-col w-full h-auto">
+          <div class="xl:flex xl:flex-row xl:gap-6 xl:pt-11 xl:text-xs sm:flex sm:flex-col sm:pt-[30px] sm:gap-2">
+            <button id="btn1" class="sm:w-[100%] sm:h-6" > Shop Now  <i class="fa-solid fa-feather"></i> </button>
+            <button id="btn2" class="sm:w-[100%] sm:h-6" > Know More <i class="fa-solid fa-feather"></i> </button>
+          </div>
+          <p class="pt-4 font-Lobster text-[10px] font-normal">we will get 30 trials free days </p>
+          <ul class="flex flex-row gap-4 p-6 text-xs">
+            <li class="font-thin hover:text-orange-500 transition duration-700 hover:cursor-pointer"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="font-thin hover:text-orange-500 transition duration-700 hover:cursor-pointer"><i class="fa-brands fa-facebook"></i></li>
+            <li class="font-thin hover:text-orange-500 transition duration-700 hover:cursor-pointer"><i class="fa-brands fa-x-twitter"></i></li>
+            <li class="font-thin hover:text-orange-500 transition duration-700 hover:cursor-pointer"><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </section> 
+      <section>
+        <img class="xl:w-[50vw] xl:h-auto xl:object-cover sm:object-cover sm:w-[100vw] sm:animate-pulsee" src="./Toffes/pngtree-indoor-plant-flowerpot-png-image_14685403.png" alt=" plantes">
+      </section>
+      
+    </div>
+    
+    <ul>
+      <li class=" text-amber-400 xl:text-6xl xl:absolute xl:top-[120px] xl:right-[80px] animate-rotationY sm:text-3xl  sm:absolute sm:top-[550px] sm:right-[80px]"><i class="fa-solid fa-leaf"></i></li>
+      <li class=" text-amber-400 xl:text-6xl xl:absolute xl:top-[120px] xl:right-[550px] animate-TranslateY sm:text-3xl sm:absolute sm:top-[550px] sm:right-[450px]"><i class="fa-solid fa-seedling  "></i></li>
+      <li class=" text-amber-400 xl:text-6xl xl:absolute xl:top-[670px] xl:right-[650px] animate-Pulse sm:text-3xl "><i class="fa-solid fa-feather"></i></li>
+    </ul>
+  </header>
+  <!-- ---------------------------------------------stylisation du contenu blanc--------------------------------------------------------------------------- -->
+  <section class="sm:flex xl:flex-row sm:flex-col sm:w-[100vw] xl:h-[40vh] sm:h-auto sm: bg-white xl:gap-4 sm:justify-center sm:items-center">
+    <div class="test  sm:border-2 sm: border-green-800 lg:w-[17vw] lg:h-[30vh] sm:shadow-xl sm:text-wrap sm:text-sm sm:font-semibold sm:font-Lobster sm: text-green-950 sm:text-center sm:p-4 sm:w-[100vw]"> <div class="sm:flex xl:flex-row sm:flex-col sm:gap-0 xl:gap-2"><i class="fa-solid fa-truck text-xl p-2"></i><span class="font-Jost text-lg">Fast<br>Delivery</span></div><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maiores</div>
+    <div class="test sm:border-2 sm: border-green-800 lg:w-[17vw] lg:h-[30vh] sm:shadow-xl sm:text-wrap sm:text-sm sm:font-semibold sm:font-Lobster sm: text-green-950 sm:text-center sm:p-2 sm:w-[100vw]"> <div class="sm:flex xl:flex-row sm:flex-col sm:gap-0 xl:gap-2 "><i class="fa-solid fa-phone text-xl p-2"></i><span class="font-Jost text-lg xl: mr-5">Great Costumor<br>Service</span></div><br><div class="mt-[-14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> </div>
+    <div class="test sm:border-2 sm: border-green-800 lg:w-[17vw] lg:h-[30vh] sm:shadow-xl sm:text-wrap sm:text-sm sm:font-semibold sm:font-Lobster sm: text-green-950 sm:text-center sm:p-4 sm:w-[100vw]"> <div class="sm:flex xl:flex-row sm:flex-col sm:gap-0 xl:gap-2"><i class="fa-solid fa-seedling text-xl p-2"></i><span class="font-Jost text-lg">Original<br>Plants</span></div><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maiores</div>
+    <div class="test sm:border-2 sm: border-green-800 lg:w-[17vw] lg:h-[30vh] sm:shadow-xl sm:text-wrap sm:text-sm sm:font-semibold sm:font-Lobster sm: text-green-950 sm:text-center sm:p-4 sm:w-[100vw]"> <div class="sm:flex xl:flex-row sm:flex-col sm:gap-0 xl:gap-2"><i class="fa-solid fa-dollar-sign text-xl p-2"></i><span class="font-Jost text-lg">Affordable<br>Price</span></div><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maiores</div>
+  </section>
+  <!------------------------------------------------Sytilisation du contenu About ----------------------------------------------------------------------------->
+  <section id="About" class="xl:flex sm:flex-col sm:w-[100vw] sm: h-auto sm:p-5 xl:p-12">
+   <img class="sm:w-[18%] sm:h-auto sm:absolute sm:right-0 xl:top-[960px] sm:top-[1640px] md:top-[1780px]" src="./Toffes/Bouquet-of-Flowers-PNG-Image-Transparent.png" alt="Bouquet">
+    <div class="sm:flex sm:flex-col sm:justify-center sm:items-center sm: pt-4 sm:text-center">
+     <h1 class="sm:text-2xl sm: text-amber-400 sm:font-Lobster"> About Us</h1>
+     <p> Follow instructions for more </p>
+    </div>
+    <div class="sm:flex sm:flex-col xl:flex-row sm:w-[100vw] sm:h-auto">
+      <div class="sm:w-[100%] sm:h-auto">
+        <img class="sm:w-[80%] sm:h-auto" src="./Toffes/10008-ma-jolie-plante-ezeepot-fleur-de-lune-visu1.webp" alt="pot de plantes">
+      </div>
+      <div class="sm:flex sm:flex-col xl:w-[100%] xl:h-auto justify-start xl:pt-32 sm:p-7 sm:flex-wrap">
+       <h1 class="sm:font-Jost sm:text-2xl xl:text-3xl"> Make your <span class="text-amber-500"> organic</span> <br> Garden</h1>
+       <p class="sm:pt-3 sm:font-Lobster sm:text-justify sm:text-xs xl:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda <br> itaque vel numquam accusamus suscipit eum sit.<br> Ullam eos aspernatur harum nulla officiis quis ea eveniet, error <br> perspiciatis quam ducimus odio!</p>
+      </div>
+    </div>
+    <div class="sm:flex sm:flex-col xl:flex-row-reverse sm:w-[100vw] sm:h-auto">
+      <div class="sm:w-[100%] sm:h-auto ">
+        <img class="sm:w-[80%] xl:w-[70%] sm:h-auto" src="./Toffes/pngtree-indoor-plant-flowerpot-png-image_14685403.png" alt="pot de plantes">
+      </div>
+      <div class="sm:flex sm:flex-col xl:w-[100%] xl:h-auto justify-start sm:p-7 xl:pt-32 sm:flex-wrap">
+       <h1 class="sm:font-Jost sm:text-2xl xl:text-3xl sm:pt-1"> Come with us <br><span class="text-amber-500"> grow up </span> your plant</h1>
+       <p class="sm:pt-3 sm:font-Lobster sm:text-justify sm:text-xs xl:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda <br> itaque vel numquam accusamus suscipit eum sit.<br> Ullam eos aspernatur harum nulla officiis quis ea eveniet, error <br> perspiciatis quam ducimus odio!</p>
+      </div>
+     
+      
+      
+    </div>
+     
+    </div>
+  </section>
+  <!------------------------------------------------Sytilisation du contenu Popular----------------------------------------------------------------------------->
+ <section id="Popular" class="sm:flex sm:flex-col sm:w-full sm:h-auto ">
+    <div class="sm:flex sm:flex-col sm:justify-center sm:items-center">
+      <p class="sm:font-Lobster sm: text-amber-500 sm:text-2xl"> Your Choice Plant </p>
+      <p> follow instruction for me </p>
+    </div>
+    <div class="sm:flex lg:flex-row sm:flex-col sm:justify-center sm:items-center sm:gap-28 sm:w-[100%] sm: h-auto sm:pt-28 sm:p-12 ">
+      <div class="sm:flex sm:flex-col bg-teal-950 calc sm:w-full xl:h-60 sm:h-60 sm:justify-center sm:items-center sm:rounded-[5%] sm:pt-5">
+        <img class="sm:w-[180px] sm:relative sm:top-[-90px] xl:left-[10px]" src="/Toffes/10008-ma-jolie-plante-ezeepot-fleur-de-lune-visu1.webp" alt="plantes" srcset="">
+        <div class="sm:relative sm:top-[-100px] sm:text-center sm:pt-3  ">
+            <p>nephrolisos exaltat</p>
+            <p> Boston Fern</p>
+            <div class="sm:flex sm:flex-col sm:justify-center sm:items-center ">
+              <div class="xl:flex xl:flex-row xl:gap-1 xl:justify-center xl:pt-3 sm:pt-5">
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-sharp-duotone fa-solid fa-star-half  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+              </div>
+              <div class="sm:flex sm:flex-row sm:gap-16 sm:justify-center sm:items-center sm:p-5">
+                <p class="xl:text-lg">5$</p>
+                <i class="fa-solid fa-cart-shopping  text-amber-500 sm:text-base"></i>
+              </div>
+            </div>
+        </div>
+      
+      </div>
+      <div class="sm:flex sm:flex-col bg-teal-950 calc sm:w-full xl:h-60 sm:h-60 sm:justify-center sm:items-center sm:rounded-[5%] sm:pt-5">
+        <img class="sm:w-[150px] sm:relative sm:top-[-85px] xl:left-[15px]" src="./Toffes/pngtree-indoor-plant-flowerpot-png-image_14685403.png" alt="plantes" srcset="">
+        <div class="sm:relative sm:top-[-100px] sm:text-center sm:pt-7 ">
+          <p>Ficus Elastica</p>
+          <p>Rubber Plant</p>
+          <div class="sm:flex sm:flex-col sm:justify-center sm:items-center ">
+              <div class="xl:flex xl:flex-row xl:gap-1 xl:justify-center xl:pt-3 sm:pt-5">
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-sharp-duotone fa-solid fa-star-half  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+              </div>
+              <div class="sm:flex sm:flex-row sm:gap-16 sm:justify-center sm:items-center sm:p-5">
+                <p class="xl:text-lg">5$</p>
+                <i class="fa-solid fa-cart-shopping  text-amber-500 sm:text-base"></i>
+              </div>
+            </div>
+            
+        </div>
+       
+      </div>
+      <div class="sm:flex sm:flex-col bg-teal-950 calc sm:w-full xl:h-60 sm:h-60 sm:justify-center sm:items-center sm:rounded-[5%] sm:pt-5">
+        <img class="sm:w-[100px] sm:relative sm:top-[-100px] xl:left-[10px]" src="./Toffes/plant-png-potted-flower-image-20.png" alt="bouquet" srcset="">
+        <div class="sm:relative sm:top-[-100px] sm:text-center sm:pt-3 ">
+          <p>spath walsisi</p>
+          <p>Peace Lily</p>
+          <div class="sm:flex sm:flex-col sm:justify-center sm:items-center ">
+              <div class="xl:flex xl:flex-row xl:gap-1 xl:justify-center xl:pt-3 sm:pt-5">
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-sharp-duotone fa-solid fa-star-half  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+              </div>
+              <div class="sm:flex sm:flex-row sm:gap-16 sm:justify-center sm:items-center sm:p-5">
+                <p class="xl:text-lg">5$</p>
+                <i class="fa-solid fa-cart-shopping  text-amber-500 sm:text-base"></i>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+      <div class="sm:flex sm:flex-col bg-teal-950 calc sm:w-full xl:h-60 sm:h-60 sm:justify-center sm:items-center sm:rounded-[5%] sm:pt-5">
+        <img class="sm:w-[180px] sm:relative sm:top-[-100px] xl:left-[10px]" src="./Toffes/green-tropical-houseplant-in-a-pot-isolated-on-transparent-background-png.png" alt="" srcset="">
+        <div class="sm:relative sm:top-[-100px] sm:text-center sm:pt-3 ">
+          <p>Adenium obesum</p>
+          <p>Desert Rose</p>
+          <div class="sm:flex sm:flex-col sm:justify-center sm:items-center ">
+              <div class="xl:flex xl:flex-row xl:gap-1 xl:justify-center xl:pt-3 sm:pt-5">
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-solid fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-sharp-duotone fa-solid fa-star-half  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+               <i class="fa-regular fa-star  text-amber-500 text-xs"></i>
+              </div>
+              <div class="sm:flex sm:flex-row sm:gap-16 sm:justify-center sm:items-center sm:p-5">
+                <p class="xl:text-lg">5$</p>
+                <i class="fa-solid fa-cart-shopping  text-amber-500 sm:text-base"></i>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+ </section>
+ <!------------------------------------------------Sytilisation du contenu Review ----------------------------------------------------------------------------->
+ <section id="Review"class="review sm:flex sm:flex-col xl:w-full xl:h-auto sm:p-2 ">
+  
+    <div class="sm:flex sm:flex-col sm:justify-center sm:items-center">
+      <p class="sm:font-Lobster sm: text-amber-500 sm:text-2xl">Customer Review</p>
+      <p>Follow Instructions For more</p>
+      <img class="xl:relative xl:left-2 xl:top-[50px] xl:w-40 xl:h-40 sm:w-12 sm:absolute sm:top-[4300px] sm:left-[5px]" src="./Toffes/Bouquet-of-Flowers-PNG-Image-Transparent.png" alt="fleurs" srcset="">
+    </div>
+    <!-- Slider main container -->
+      <div class="swiper contenaire sm:w-full sm:h-auto ">
+
+        <div class="slider-wrapper sm:w-full sm:h-auto">
+
+            <div class="swiper-wrapper sm:flex sm:flex-row sm:justify-center sm:items-center xl:w-[100vw] sm:w-[20vw]  sm:h-auto sm:pt-12 xl:pt-0 sm:p-4 xl:h-[100vh]">
+
+                
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/photo-1651684215020-f7a5b6610f23.jpg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/images.jpg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/pexels-photo-774909.jpeg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/pexels-photo-774909.jpeg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/images.jpg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/pexels-photo-774909.jpeg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide sm:flex sm:flex-col bg-green-700 xl:w-[100%] sm:w-[100%] sm:h-auto xl:h-auto xl:p-5 sm:rounded-xl drop-shadow-md border-2 sm:justify-center sm:items-center sm:p-1">
+                    <div>
+                      <p class="sm:text-justify sm:font-Lobster sm:text-sm sm:text-[10px] leading-4 sm:flex-wrap"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae vel suscipit quo repellat iste impedit aspernatur placeat qui fuga <br>perferendis? 
+                       Est ut eveniet ad, minus sunt veritatis accusamus a repudiandae!</p>
+                    </div>
+                    <div class="sm:flex sm:flex-row pt-4 w-[100%] xl:gap-2 sm:gap-1">
+                        <div class="sm:h-auto sm:w-[15%]">
+                          <img class="image" src="/Toffes/photo-1651684215020-f7a5b6610f23.jpg" alt="images" srcset="">
+                        </div>
+                      <div class="sm:flex sm:flex-row  sm:h-auto sm:w-[85%]">
+                        <ul class="sm:flex sm:flex-col sm:w-[100%] ">
+                          <p class="text-amber-400 xl:text-2xl sm:text-xs">John Doe</p>
+                          <p class="xl:text-2xl sm:text-xs">Designer</p>
+                        </ul>
+                       <i class="fa-solid fa-quote-right text-slate-950"></i>
+                      </div>
+                    </div>
+                </div>
+               
+               
+                
+            </div>
+  
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination "></div>
+            
+        </div>
+       
+
+      </div>
+
+  
+
+               
+    
+ </section>
+ <footer class="sm:flex sm:flex-col sm:w-[100vw] sm:h-auto bg-amber-100 xl:pt-1 xl:mt-24 sm:mt-12">
+    <div class="flex flex-col sm:w-[100vw] sm:h-auto sm:justify-center sm:items-center ">
+
+      <div class="sm:flex sm:flex-col sm:p-3 sm:w-[50vw] sm:h-auto bg-green-700 sm:rounded-lg sm:relative xl:left-6 xl:top-[-50px] sm:top-[-40px] xl:gap-1 sm:gap-2 sm:shadow-md">
+
+        <p class="sm:tracking-tight sm:flex-nowrap"><span class="text-amber-300">Suscribe</span> to our newsletter</p>
+        <div class="sm:flex xl:flex-row sm:flex-col sm:gap-0  "> 
+          <input class="bg-slate-100 xl:w-[50vw] sm:w-[40vw] xl:h-8 xl:p-2 sm:rounded-md sm:tracking-normal text-slate-950" type="text" placeholder="Your Email Adress" ><i class="fa-regular fa-envelope text-red-600 xl:font-bold xl:text-xl sm:relative xl:right-9 sm:left-32 xl:left-[-30px] xl:top-2 sm:top-[-20px]"></i>
+          <button class="text-white sm:text-xs bg-stone-900 sm:rounded-md sm:tracking-normal xl:w-[10vw] sm:w-[40vw] sm:h-8 sm:relative sm:top-[-15px] xl:top-[0]"> Suscribe <i class="fa-regular fa-thumbs-up"></i></button>
+        </div>
+
+      </div>
+      <div class="sm:flex sm:flex-col xl:w-[100vw] xl:h-auto xl:p-10 ">
+
+        <div class="sm:flex sm:flex-row sm:justify-center sm:items-center">
+
+          <hr class="xl:w-[40vw] sm:w-[20vw] border-t-green-900">
+          <ul class="sm:flex sm:flex-row xl:gap-3 sm:gap-1">
+           <i class="fa-brands fa-linkedin text-lime-950"></i>
+           <i class="fa-brands fa-facebook text-lime-950"></i>
+           <i class="fa-brands fa-x-twitter text-lime-950"></i>
+           <i class="fa-brands fa-instagram text-lime-950"></i>
+          </ul>
+          <hr class="xl:w-[40vw] sm:w-[20vw] border-t-green-900">
+           
+        </div>
+        <div class="sm:flex xl:flex-row sm:flex-col sm:justify-center sm:items-center xl:gap-[150px] sm:gap-[50px] xl:p-20 xl:pt-9 sm:pt-7 sm:w-[100vw] sm:h-auto tracking-tight">
+          <div class="sm:flex sm:flex-col sm:justify-center sm:items-center">
+           <img class="xl:w-[90px] sm:w-[40vw] sm:h-[20vh] xl:h-[90px]"src="/Toffes/nature-green-leaf-free-png.webp" alt="feuille" srcset="">
+           <p class="text-lime-900 xl:text-xl sm:text-lg sm:font-Lobster sm:font-bold sm:tracking-tight sm:text-center">IndorePlants.</p>
+          </div>
+          <div class="sm:flex sm:flex-col sm:gap-6 sm:w-[100vw] sm:justify-center sm:items-center  sm:h-auto">
+            <div><p class="sm:text-lg text-green-900 sm:font-bold  xl:w-[200px] sm:flex-nowrap xl:p-10">Quick Link</p></div>
+            <div class="sm:flex sm:flex-col ">          
+              <p class="sm:text-sm text-green-900">plants</p>
+              <p class="sm:text-sm text-green-900">Flowers</p>
+              <p class="sm:text-sm text-green-900">Gerdenning</p>
+              <p class="sm:text-sm text-green-900">Seeds</p>
+              <p class="sm:text-sm text-green-900">Shipping</p>
+            </div>
+          </div>
+          
+          <div class="sm:flex sm:flex-col xl:gap-12 sm:gap-6 sm:w-[100vw] sm:justify-center sm:items-center  sm:h-auto">
+           <div><p class="sm:text-lg text-green-900 sm:font-bold  xl:w-[200px] sm:flex-nowrap xl:p-5 ">Popular service</p></div>
+           <div class="sm:flex sm:flex-col ">
+             <p class="sm:text-sm text-green-900">Tree planting</p>
+             <p class="sm:text-sm text-green-900">Gruss cutting</p>
+             <p class="sm:text-sm text-green-900">Weeds control</p>
+             <p class="sm:text-sm text-green-900">Project</p>
+           </div>
+          </div>
+          
+          <div class="sm:flex sm:flex-col xl:gap-12 sm:gap-6 sm:w-[100vw] sm:justify-center sm:items-center sm:h-auto">
+
+           <div><p class="sm:text-lg text-green-900 sm:font-bold  xl:w-[200px] sm:flex-nowrap xl:p-5">Contact Us</p></div>
+            <div class="sm:flex sm:flex-col ">
+             <p class="sm:text-sm text-green-900">+88 333 78 901</p>
+             <p class="sm:text-sm text-green-900">Lightcode@gmail.com</p>
+             <p class="sm:text-sm text-green-900">1234 Tailwind Avenue,CSS City</p>
+             <p class="sm:text-sm text-green-900">WebLand 1235,USA</p>
+            </div>
+          </div>
+
+          
+        </div>
+         
+      </div>
+    <div>
+ </footer>
+
+ <!------------------------------------------------Contenu JS ----------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+
+  
+</body>
+</html>

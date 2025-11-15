@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-green-900 flex flex-col text-slate-100 box-border m-0 p-0 tracking-[2.25px] scroll-smooth
+}
+#btn1{
+    @apply bg-amber-500 rounded-lg xl:w-28 h-8 transition duration-700 ease-out
+}
+#btn2{
+    @apply bg-transparent rounded-lg xl:w-28 h-8 border-2 border-white transition duration-700 ease-out
+}
+ #btn1:hover{
+ transform: scale(1.2);
+ }
+ #btn2:hover{
+ transform: scale(1.2);
+
+ }
+ 
+ .navbar{
+    position: absolute;
+    left:0px;
+    z-index:5;
+    transition:all 3s ease-in-out;
+    backdrop-filter:blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 100vw;
+    height: auto;
+    
+ }
+
+   /* @keyframes transitionAnim {
+
+        0% {
+
+        opacity: 0;
+        
+    }
+        50% {
+
+        opacity: 0.33;
+        
+    }
+
+
+        100% {
+
+        opacity: 1;
+    
+    }
+}
+
+   @keyframes transitionAnima {
+
+        0% {
+
+        opacity: 0;
+        transform:  translateX(-200px);
+    }
+
+
+        100% {
+
+        opacity: 1;
+        transform:  translateX(0);
+    }
+}
+
+   @keyframes transitionAnimb { 
+
+        0% {
+
+        opacity: 0;
+        transform:  translateX(-300px);
+    }
+
+
+        100% {
+
+        opacity: 1;
+        transform:  translateX(0);
+    }
+}
+
+   @keyframes transitionAnimc {
+
+        0% {
+
+        opacity: 0;
+        transform:  translateX(-200px);
+    }
+
+
+        100% {
+
+        opacity: 1;
+        transform:  translateX(0);
+    }
+} 
+
+
+
+ .test {
+    animation: transitionAnim ease-in-out 0.5s ;
+    animation-timeline: view(); 
+     animation-range-start: cover 0% ;
+    animation-range-end: cover 30% ; 
+    
+}
+ .testa {
+    animation: transitionAnima ease-in-out 15s;  ;
+    animation-delay: 0.5s;
+    animation-timeline: view(); 
+    animation-range-start: cover 0% ;
+    animation-range-end: cover 30% ; 
+}
+
+
+ .testb  {
+    animation: transitionAnimb ease-in-out 15s ;
+    animation-delay: 2s;
+    animation-timeline: view();
+    animation-range-start: cover 0% ;
+    animation-range-end: cover 30% ; 
+}
+ .testc  {
+    animation: transitionAnimc ease-in-out 15s ;
+    animation-timeline: view(); 
+    animation-delay: 3s;
+     animation-range-start: cover 0% ;
+    animation-range-end: cover 30% ; 
+} */
+
+
+
+
+ @media only screen and (min-width:768px) {
+    calc{
+         width: calc(70%/4 - 16px);
+         border-radius: 8%;
+         height: 35vh;
+    }
+   
+ }
+
+ .image{
+    width: 8vw;
+    height: 10vh;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+
+  .swiper-button-next:after,.swiper-button-prev::after{
+    color:rgb(173, 184, 11);
+    font-weight:bold;
+    font-size:10rem;
+    width: 50px;
+    height:50px;
+    
+  }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+    background: white;    
+ }
+
+ .swiper-pagination{
+
+  /* background-color: aliceblue; */
+  
+
+ }
+
+
+ footer{
+ 
+ 
+ }
